@@ -1,0 +1,117 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Sofia+Sans+Extra+Condensed&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+font-family: 'Sofia Sans Extra Condensed', sans-serif;
+}
+body
+{
+    background-color: #76b5c5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+.title
+{
+    font-size: 50px;
+    font-weight: 600;
+    color: #21130d;
+    letter-spacing: 1px;
+    margin: 30px 0;
+}
+
+.todo-list
+{
+    width: 450px;
+    padding: 20px;
+    box-shadow: #76b5c5;
+    border-radius: 5px;
+    background-color: #21130d;
+}
+.list-head
+{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 15px;
+}
+
+.entered-list
+{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 24px;
+    outline: none;
+}
+
+.add-list
+{
+    border: none;
+    border-radius: 5px;
+    background-color: #e28743;
+    outline: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.add-list.active
+{
+    opacity: 1;
+    pointer-events: all;
+}
+.tasks
+{
+    width: 100%;
+    margin-top: 30px;
+
+}
+
+.item
+{
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: black;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item p
+{
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.item-btn
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.item-btn i 
+{
+    color: #e28743;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.item.completed p
+{
+    text-decoration: line-through;
+    color: white;
+
+}
